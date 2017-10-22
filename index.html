@@ -11,6 +11,7 @@
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
+      #messages li.system { font-weight: bold; color: rebeccapurple; }
     </style>
   </head>
   <body>
@@ -31,6 +32,10 @@
 
         socket.on('chat message', (msg) => {
           $('#messages').append($('<li>').text(msg));
+        });
+
+        socket.on('system message', (msg) => {
+          $('#messages').append($('<li class="system">').text(msg));
         });
       });
     </script>

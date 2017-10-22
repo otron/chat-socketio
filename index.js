@@ -17,14 +17,14 @@ io.on('connection', (socket) => {
   console.log(userid + ': connected');
   socket.on('disconnect', () => {
     console.log(userid + ': disconnected');
-    io.emit('chat message', userid + ': left');
+    io.emit('system message', userid + ': left');
   });
   socket.on('chat message', (msg) => {
     console.log(userid + ': message => ' + msg);
     io.emit('chat message', `${userid}: ${msg}`);
   });
 
-  io.emit('chat message', userid + ': connected');
+  io.emit('system message', userid + ': connected');
 
 });
 
