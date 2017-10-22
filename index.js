@@ -14,6 +14,9 @@ app.get('/', (req, res) => {
 // "connnection" is an event. Where's the list of events? Is there such a alist?
 io.on('connection', (socket) => {
   console.log('user connected: ' + socket.id);
+  socket.on('disconnect', () => {
+    console.log('user disconnected: ' + socket.id);
+  });
 });
 
 server.listen(3000, () => {

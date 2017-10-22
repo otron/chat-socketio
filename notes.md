@@ -14,3 +14,6 @@ It's rendering all right but the console message that's supposed to show up when
 
 uhhhh. Lol it started working when I made the `script` tag w/ the src set to `/socket.io/socket.io.js` non-self-closing.
 (from `<script src='...' />` to `<script src='...' > </script>`). That's weird.
+The latter thing is what they do in the example/tutorial. I don't get that.
+Ohhh there's a whole thing about it: https://stackoverflow.com/questions/69913/why-dont-self-closing-script-tags-work
+In summary it's because the browsers see the self-closing tag as empty and just omit it.
