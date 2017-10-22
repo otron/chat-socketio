@@ -1,0 +1,12 @@
+{
+  "name": "chat-socketio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Odd",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "socketio": "^1.0.0"
+  }
+}
