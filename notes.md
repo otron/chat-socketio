@@ -17,3 +17,6 @@ uhhhh. Lol it started working when I made the `script` tag w/ the src set to `/s
 The latter thing is what they do in the example/tutorial. I don't get that.
 Ohhh there's a whole thing about it: https://stackoverflow.com/questions/69913/why-dont-self-closing-script-tags-work
 In summary it's because the browsers see the self-closing tag as empty and just omit it.
+
+
+oh dear we're pulling in jquery :(
