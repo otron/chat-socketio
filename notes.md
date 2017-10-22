@@ -20,3 +20,16 @@ In summary it's because the browsers see the self-closing tag as empty and just 
 
 
 oh dear we're pulling in jquery :(
+
+
+## Emitting events
+
+- `emit` is what the client does. An event is emitted from the client to the server. It's a 1-1 thing.
+
+
+## Broadcasting events
+
+- `broadcast` is what the server does to the clients. It's a 1-many (server - all the clients) type thing.
+
+events are... just strings. There's no magic. Some are automatically broadcast/emitted as a part of/by socket.io (`connect`, `disconnect`
+seem to be examples of such events).
