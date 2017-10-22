@@ -25,6 +25,7 @@ io.on('connection', (socket) => {
   });
 
   io.emit('system message', userid + ': connected');
+  socket.emit('system message', 'Welcome, your userId is: ' + userid);
 
 });
 
