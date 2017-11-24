@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-// "connnection" is an event. Where's the list of events? Is there such a alist?
+// "connnection" is an event. Where's the list of events? Is there such a list?
 io.on('connection', (socket) => {
   let userid = socket.id;
   console.log(userid + ': connected');

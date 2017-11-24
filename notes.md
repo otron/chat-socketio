@@ -33,3 +33,10 @@ oh dear we're pulling in jquery :(
 
 events are... just strings. There's no magic. Some are automatically broadcast/emitted as a part of/by socket.io (`connect`, `disconnect`
 seem to be examples of such events).
+
+## Todos
+
+- run it in a docker container
+- run it on a server inside a docker container
+- add https/ssl
+- add support for usernames
